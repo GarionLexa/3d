@@ -1,11 +1,15 @@
-const CACHE_NAME = 'balovstvo-3d-v2';
+const CACHE_NAME = 'balovstvo-3d-v3';
 const CORE_FILES = [
   './',
   './index.html',
   './manifest.json',
   './three.min.js',
   './GLTFLoader.js',
-  './models_db.json'
+  './models_db.json',
+  './ambient_audio.js',
+  './search_hub.js',
+  './sketch_3d.js',
+  './studio_upgrade.js'
 ];
 
 self.addEventListener('install', (event) => {
