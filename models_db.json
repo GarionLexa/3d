@@ -1,0 +1,71 @@
+{
+  "models": [
+    {
+      "keywords": ["танк", "броневик", "tank"],
+      "blueprint": {
+        "objectName": "Боевой 3D-Танк",
+        "category": "Техника (База GitHub)",
+        "analysisNotes": "Танк с вращающейся башней, пушкой, гусеницами и бронекорпусом.",
+        "animationStyle": "showcase",
+        "recommendedLighting": "sunset",
+        "parts": [
+          {"name":"Бронекорпус","type":"roundedBox","position":{"x":0,"y":0.56,"z":0},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":1.6,"height":0.56,"depth":2.8,"bevel":0.07,"color":"#3f6212","materialTexture":"tech_panel","roughness":0.6,"metalness":0.45,"animationRole":"static"},
+          {"name":"Гусеница","type":"roundedBox","mirrorX":true,"position":{"x":0.88,"y":0.34,"z":0},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":0.34,"height":0.58,"depth":2.95,"bevel":0.12,"color":"#1e293b","materialTexture":"leather","roughness":0.9,"metalness":0.15,"animationRole":"static"},
+          {"name":"Башня","type":"roundedBox","position":{"x":0,"y":1.06,"z":-0.1},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":1.15,"height":0.48,"depth":1.35,"bevel":0.1,"color":"#4d7c0f","materialTexture":"tech_panel","roughness":0.55,"metalness":0.5,"animationRole":"static"},
+          {"name":"Ствол орудия","type":"cylinder","position":{"x":0,"y":1.08,"z":1.35},"rotation":{"x":90,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"radiusTop":0.08,"radiusBottom":0.1,"height":2.0,"color":"#365314","materialTexture":"brushed_metal","roughness":0.35,"metalness":0.8,"animationRole":"static"},
+          {"name":"Люк командира","type":"cylinder","position":{"x":0.22,"y":1.34,"z":-0.25},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"radiusTop":0.22,"radiusBottom":0.24,"height":0.12,"color":"#365314","materialTexture":"brushed_metal","roughness":0.4,"metalness":0.7,"animationRole":"static"}
+        ]
+      }
+    },
+    {
+      "keywords": ["вертолёт", "вертолет", "helicopter"],
+      "blueprint": {
+        "objectName": "3D-Вертолёт",
+        "category": "Авиация (База GitHub)",
+        "analysisNotes": "Вертолёт с вращающимся несущим винтом, стеклянной кабиной и лыжами.",
+        "animationStyle": "float",
+        "recommendedLighting": "studio",
+        "parts": [
+          {"name":"Кабина","type":"sphere","position":{"x":0,"y":1.0,"z":0.35},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":0.85,"y":0.75,"z":1.35},"radius":0.75,"color":"#2563eb","materialTexture":"smooth","roughness":0.22,"metalness":0.5,"animationRole":"static"},
+          {"name":"Стекло кабины","type":"dome","position":{"x":0,"y":1.04,"z":0.78},"rotation":{"x":72,"y":0,"z":0},"scale":{"x":0.78,"y":0.65,"z":0.72},"radius":0.62,"color":"#0f172a","materialTexture":"smooth","roughness":0.05,"metalness":0.2,"opacity":0.55,"animationRole":"static"},
+          {"name":"Хвостовая балка","type":"cylinder","position":{"x":0,"y":1.05,"z":-1.35},"rotation":{"x":90,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"radiusTop":0.12,"radiusBottom":0.22,"height":2.1,"color":"#1d4ed8","materialTexture":"tech_panel","roughness":0.3,"metalness":0.6,"animationRole":"static"},
+          {"name":"Несущий винт","type":"roundedBox","position":{"x":0,"y":1.78,"z":0.15},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":3.2,"height":0.04,"depth":0.18,"bevel":0.01,"color":"#cbd5e1","materialTexture":"carbon","roughness":0.3,"metalness":0.5,"animationRole":"rotate_y"},
+          {"name":"Полоз посадочный","type":"capsule","mirrorX":true,"position":{"x":0.52,"y":0.22,"z":0.3},"rotation":{"x":90,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"radius":0.06,"height":1.95,"color":"#64748b","materialTexture":"brushed_metal","roughness":0.25,"metalness":0.9,"animationRole":"static"}
+        ]
+      }
+    },
+    {
+      "keywords": ["мотоцикл", "байк", "мотик", "moto"],
+      "blueprint": {
+        "objectName": "3D-Спортбайк",
+        "category": "Транспорт (База GitHub)",
+        "analysisNotes": "Мотоцикл с обтекаемым баком, вилкой, выхлопом и вращающимися колёсами.",
+        "animationStyle": "showcase",
+        "recommendedLighting": "neon",
+        "parts": [
+          {"name":"Рама и бак","type":"roundedBox","position":{"x":0,"y":0.88,"z":0.05},"rotation":{"x":-12,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":0.44,"height":0.42,"depth":1.25,"bevel":0.12,"color":"#dc2626","materialTexture":"smooth","roughness":0.18,"metalness":0.65,"animationRole":"static"},
+          {"name":"Сиденье","type":"roundedBox","position":{"x":0,"y":0.84,"z":-0.55},"rotation":{"x":12,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"width":0.36,"height":0.16,"depth":0.72,"bevel":0.05,"color":"#0f172a","materialTexture":"leather","roughness":0.85,"metalness":0.05,"animationRole":"static"},
+          {"name":"Передняя вилка","type":"cylinder","mirrorX":true,"position":{"x":0.16,"y":0.84,"z":0.74},"rotation":{"x":-28,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"radiusTop":0.04,"radiusBottom":0.04,"height":1.05,"color":"#e2e8f0","materialTexture":"brushed_metal","roughness":0.15,"metalness":0.95,"animationRole":"static"},
+          {"name":"Переднее колесо","type":"torus","position":{"x":0,"y":0.38,"z":0.96},"rotation":{"x":0,"y":90, "z":0},"scale":{"x":1,"y":1,"z":1},"radius":0.3,"tubeRadius":0.1,"color":"#0f172a","materialTexture":"leather","roughness":0.9,"metalness":0.05,"animationRole":"rotate_x"},
+          {"name":"Заднее колесо","type":"torus","position":{"x":0,"y":0.38,"z":-0.88},"rotation":{"x":0,"y":90,"z":0},"scale":{"x":1,"y":1,"z":1},"radius":0.3,"tubeRadius":0.13,"color":"#0f172a","materialTexture":"leather","roughness":0.9,"metalness":0.05,"animationRole":"rotate_x"},
+          {"name":"Фара LED","type":"sphere","position":{"x":0,"y":1.14,"z":0.76},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":0.85,"z":0.7},"radius":0.14,"color":"#e0f2fe","materialTexture":"smooth","roughness":0.1,"metalness":0.2,"emissive":"#38bdf8","emissiveIntensity":1.8,"animationRole":"pulse"}
+        ]
+      }
+    },
+    {
+      "keywords": ["лампа", "светильник", "торшер", "lamp"],
+      "blueprint": {
+        "objectName": "Дизайнерская 3D-Лампа",
+        "category": "Интерьер (База GitHub)",
+        "analysisNotes": "Настольная лампа с полым абажуром и тёплым свечением.",
+        "animationStyle": "showcase",
+        "recommendedLighting": "sunset",
+        "parts": [
+          {"name":"Основание","type":"lathe","position":{"x":0,"y":0,"z":0},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"profile":[{"r":0.01,"y":0},{"r":0.55,"y":0.03},{"r":0.45,"y":0.16},{"r":0.12,"y":0.26},{"r":0.08,"y":1.45}],"color":"#1e293b","materialTexture":"brushed_metal","roughness":0.25,"metalness":0.85,"animationRole":"static"},
+          {"name":"Полый абажур","type":"lathe","position":{"x":0,"y":1.2,"z":0},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1,"z":1},"profile":[{"r":0.72,"y":0},{"r":0.42,"y":0.75},{"r":0.38,"y":0.75},{"r":0.68,"y":0}],"color":"#fef3c7","materialTexture":"fabric","roughness":0.7,"metalness":0.05,"animationRole":"static"},
+          {"name":"Лампочка","type":"sphere","position":{"x":0,"y":1.48,"z":0},"rotation":{"x":0,"y":0,"z":0},"scale":{"x":1,"y":1.15,"z":1},"radius":0.18,"color":"#fef08a","materialTexture":"smooth","roughness":0.1,"metalness":0.1,"emissive":"#fbbf24","emissiveIntensity":2.0,"animationRole":"pulse"}
+        ]
+      }
+    }
+  ]
+}
